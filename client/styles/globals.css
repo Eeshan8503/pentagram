@@ -124,6 +124,19 @@ a {
 .contact p{
   font-size: 2.5em;
 }
+.frame{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  margin: 5%;
+  /* overflow: hidden; */
+  
+}
+.frame img{
+  border-radius: 90px;
+}
 @media only screen and (max-width: 1320px) { 
   .logo{
     display: none;
@@ -149,6 +162,7 @@ a {
   }
   .events{
     margin-left: 15%;
+    width: 100%;
   }
   .contact{
     margin-left:45%;
@@ -158,12 +172,16 @@ a {
     border: 1px solid white;
     padding: 10%;
   }
-}
-.frame{
-  width: 10%;
-  margin: 5%;
-  
-}
-.frame img{
-  border-radius: 100%;
+  .frame{
+    margin: 0;
+    width: 100px;
+    height: 100px;
+  }
+  .frame p{
+    font-size: 0.1em;
+    /* display: none; */
+  }
+  .frame img{
+    border-radius: 50px;
+  }
 }
