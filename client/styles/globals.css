@@ -147,4 +147,15 @@ a {
   .side{
     width: 12%;
   }
+  .events{
+    margin-left: 15%;
+  }
+  .contact{
+    margin-left:45%;
+    font-size: 0.5em;
+  }
+  .nav p{
+    border: 1px solid white;
+    padding: 10%;
+  }
 }
