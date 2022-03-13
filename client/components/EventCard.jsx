@@ -1,7 +1,7 @@
 import React from 'react'
 
 const EventCard = (props) => {
-  
+  var t;
   return (
     <div style={{margin:'5%'}}>
         <div className="flip-card" style={{pointerEvents:props.dis}}>
@@ -14,8 +14,11 @@ const EventCard = (props) => {
     </div>
   </div>
 </div>
+<p style={{marginLeft:'40%',fontSize:'1.2em'}}>{props.name}</p>
 <p style={{marginLeft:'40%',fontSize:'1.2em'}}>{props.desig}</p>
-<button onClick={()=>window.location.href=`${props.form}`} className='btn' style={{marginLeft:'40%',display:props.dis}}>Register</button>
+{/* {props.form===undefined?t='none':t=''} */}
+<button onClick={()=>window.location.href=`${props.form}`} className='btn' style={{marginLeft:'40%',display:props.dis},props.form===undefined?{visibility
+:'hidden'}:{marginLeft:'40%'}}>Register</button>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from './../public/assets/logoo.jpeg'
 import EventCard from './EventCard'
+import Frame from './Frame'
 import E1 from './../public/assets/E1.jpeg'
 import E2 from './../public/assets/E2.jpeg'
 import E3 from './../public/assets/E3.jpeg'
@@ -9,54 +10,67 @@ import E5 from './../public/assets/E5.jpeg'
 import E6 from './../public/assets/E6.jpeg'
 import E7 from './../public/assets/E7.jpeg'
 import E8 from './../public/assets/E8.jpeg'
-import { render } from 'react-dom'
+import E9 from './../public/assets/E9.jpeg'
+import E10 from './../public/assets/E10.jpeg'
+import E11 from './../public/assets/E11.jpeg'
 // import P1 from './../public/assets/'
 const Home = () => {
     let i=0;
     var ab=[
         {
             post:require(`./../public/assets/P1.jpeg`),
-            cont:`President`
+            cont:`PRESIDENT`,
+            name:'PIYUSH DUBEY'
         },
         {
             post:require(`./../public/assets/P2.jpeg`),
-            cont:`Club Co-ordinator`
+            cont:`CLUB CO-ORDINATOR`,
+            name:'VANDIT AGARWAL'
         },
         {
             post:require(`./../public/assets/P3.jpeg`),
-            cont:`Secretary`
+            cont:`SECRETARY`,
+            name:'DAVIK S RAO'
         },
         {
             post:require(`./../public/assets/P4.jpeg`),
-            cont:`Tech and Design head`
+            cont:`TECH AND DESIGN HEAD`,
+            name:'DUSHYANTA'
         },
         {
             post:require(`./../public/assets/P5.jpeg`),
-            cont:`Digital Marketing head`
+            cont:`DIGITA MARKETING HEAD`,
+            name:'ANANYA GUPTA'
         },
         {
             post:require(`./../public/assets/P6.jpeg`),
-            cont:`FINANCIAL HEAD`
+            cont:`FINANCIAL HEAD`,
+            name:'ABHISHEK S'
         },
         {
             post:require(`./../public/assets/P7.jpeg`),
-            cont:`Student co-ordinators`
+            cont:`STUDENT CO-ORDINATORS`,
+            name:'LAKSH'
         },
         {
             post:require(`./../public/assets/P8.jpeg`),
-            cont:`Student co-ordinators`
+            cont:`STUDENT CO-ORDINATORS`,
+            name:'SUNAG P'
         },
         {
             post:require(`./../public/assets/P9.jpeg`),
-            cont:`SOCIAL MEDIA MANAGER`
+            cont:`SOCIAL MEDIA MANAGER`,
+            name:'AMISHA NAIK'
         },
         {
             post:require(`./../public/assets/P10.jpeg`),
-            cont:`EVENT ORGANIZING HEADS`
+            cont:`EVENT ORGANIZING HEADS`,
+            name:'SANATH'
         },
         {
             post:require(`./../public/assets/P11.jpeg`),
-            cont:`EVENT ORGANIZING HEADS`
+            cont:`EVENT ORGANIZING HEADS`,
+            name:'SUMITH'
         },
     ]
     var k=[
@@ -124,6 +138,36 @@ const Home = () => {
             
             Pentagram brings you an intriguing and stirring event,  Encipher 🕵️ which would keep you entertained and help you upgrade your cryptography skills.`,
             form:'https://forms.gle/c1YaPzFevJ9W73D97'
+        },
+        {
+            post:E9,
+            cont:`Greetings from BMSCE IEEE Computer Society and Pentagram!
+
+            The importance of data analytics in any sector is compounded, creating an enormous quantity of knowledge that can provide valuable insights into the field. `,
+            form:'https://bit.ly/3pVGSWz'
+        },
+        {
+            post:E10,
+            cont:`Greetings from Team CodeLocked !
+
+            "Everyone should learn how to code because it teaches you how to think."
+            -Steve Jobs
+            
+            Are you someone who's fascinated by programming and creating solutions using code ? 🖥️
+            
+            Well then here's your chance to finally prove your mettle! 💥
+            `,
+            form:'https://forms.gle/jMfvs8B78TxvokRg8'
+        },
+        {
+            post:E11,
+            cont:`Hi guys!
+
+            The ISE Student Club on the occasion of Pi day brings you 
+            3. UNO 4 
+            A riveting combination of two of your favourite games- UNO and Charades. Come try your hands at this at this bonanza of fun. 
+            See you guys there! `,
+            form:'https://forms.gle/Bg57zXkgAvwDkgEs9'
         }
         ];
 
@@ -152,7 +196,7 @@ const Home = () => {
             <h1>The Team</h1>
             <div className='Evcards'>
             {console.log(ab[1])}
-            {ab.map(c=>{return <EventCard dis='none' image={c.post.default.src} desig={c.cont}/>})}
+            {ab.map(c=>{return <Frame dis='none' name={c.name} image={c.post.default.src} desig={c.cont}/>})}
             </div>
         </div>
         <div className='contact' id='contact'>
