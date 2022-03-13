@@ -129,6 +129,22 @@ a {
     display: none;
   }
   .nav{
-    justify-content: space-between;
+    margin-top: 15%;
+    margin-left: 2%;
+    position: fixed;
+    /* left: 0; */
+    justify-content: space-;
+    flex-direction: column  ;
+    width: 10%;
+    background-color: transparent;
+    color: white;
+    height: 100%;
+    /* position: absolute; */
+    /* align-items: flex-start; */
+    align-content: space-evenly;
+    font-size: 1.2em;
+  }
+  .side{
+    width: 12%;
   }
 }
