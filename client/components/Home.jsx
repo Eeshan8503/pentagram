@@ -195,7 +195,7 @@ const Home = () => {
         <div className='events' id='about'>
             <h1>The Team</h1>
             <div className='Evcards'>
-            {console.log(ab[1])}
+            {/* {console.log(ab[1])} */}
             {ab.map(c=>{return <Frame dis='none' name={c.name} image={c.post.default.src} desig={c.cont}/>})}
             </div>
         </div>
@@ -206,6 +206,10 @@ const Home = () => {
         <p>President</p>
         <p>7209046690</p>
         <p>bmscepentagram@gmail.com</p>
+        <br/>
+        <br/>
+        <p style={{fontSize:'15px'}}>Made by Eeshan Mattey</p>
+        <p style={{fontSize:'15px'}}>Supported by Abhinav Jain</p>
         </div>
       </>
   )
