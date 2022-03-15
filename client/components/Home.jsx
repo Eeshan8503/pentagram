@@ -39,7 +39,7 @@ const Home = () => {
         },
         {
             post:require(`./../public/assets/P5.jpeg`),
-            cont:`DIGITA MARKETING HEAD`,
+            cont:`DIGITAL MARKETING HEAD`,
             name:'ANANYA GUPTA'
         },
         {
