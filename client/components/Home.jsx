@@ -34,11 +34,11 @@ const Home = () => {
       cont: `FINANCIAL HEAD`,
       name: 'ADVAITH V',
     },
-    {
-      post: require(`./../public/assets/P4.jpg`),
-      cont: `SECRETARY`,
-      name: 'UMANG GOEL',
-    },
+    // {
+    //   post: require(`./../public/assets/P4.jpg`),
+    //   cont: `SECRETARY`,
+    //   name: 'UMANG GOEL',
+    // },
     {
       post: require(`./../public/assets/P5.jpg`),
       cont: `TECH AND DESIGN HEAD`,
