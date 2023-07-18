@@ -197,8 +197,7 @@ const Home = () => {
         <p>bmscepentagram@gmail.com</p>
         <br />
         <br />
-        <p style={{ fontSize: '15px' }}>Made by Eeshan Mattey</p>
-        <p style={{ fontSize: '15px' }}>Supported by Abhinav Jain</p>
+        
       </div>
     </>
   )
